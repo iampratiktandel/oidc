@@ -7,13 +7,17 @@ export const environment = {
 
   // Provided by organization.
   client_id: 'UppDG9Ma46Q9LVJNNejKFbTRWHCHnNbz',
+  // client_id: 'QqxqMJ3rF7oTFTfr2XZuBRkkrnfdLszq',
 
   // openid profile
   scope: 'openid email roles',
   response_type: 'id_token token',
   authority: 'https://dev-1auth.1rivet.com/',
-  redirect_uri: 'http://localhost:4200/',
+  redirect_uri: 'http://localhost:4200/dashboard',
   post_logout_redirect_uri: 'http://localhost:4200/',
+
+  // authority: 'https://iampratiktandel.us.auth0.com/u/login',
+  // redirect_uri: 'https://iampratiktandel.us.auth0.com/u/login?state=g6Fo2SAxTlB0OHdVbWlJRjlvRGlYU2pUQ3hMVjlJdlY5RWJBeaN0aWTZIDAtM3ktc01zZ0lxdDBRczN0OW5yanJIZ191MDE0ZVRSo2NpZNkgUXF4cU1KM3JGN29URlRmcjJYWnVCUmtrcm5mZExzenE',
   
   // Policy server config
   // silent_redirect_uri: 'http://localhost:4200/silent-renew.html',

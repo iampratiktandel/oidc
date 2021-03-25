@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AuthService } from '../../service/auth/auth.service';
 
 @Component({
   selector: 'app-master',
@@ -7,9 +8,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MasterComponent implements OnInit {
 
-  constructor() { }
+  /** Data of logged in user */
+  public loggedInUserData: any;
+
+  constructor(private authService: AuthService) { }
 
   ngOnInit(): void {
+    this.authService.getUserData().subscribe((res) => {
+      this.loggedInUserData = res;
+    })
   }
 
+  public logout() {
+    this.authService.logout();
+  }
 }
