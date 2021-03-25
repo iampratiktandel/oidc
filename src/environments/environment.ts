@@ -6,20 +6,23 @@ export const environment = {
   production: false,
 
   // Provided by organization.
-  authority: 'http://localhost:5000/oidc',
-  client_id: 'js.tokenmanager',
-  redirect_uri: 'http://localhost:4200/auth.html',
-  post_logout_redirect_uri: 'http://localhost:4200/',
-  response_type: 'id_token token',
-  scope: 'openid email roles',
+  client_id: 'UppDG9Ma46Q9LVJNNejKFbTRWHCHnNbz',
 
-  silent_redirect_uri: 'http://localhost:4200/silent-renew.html',
-  automaticSilentRenew: true,
-  accessTokenExpiringNotificationTime: 4,
+  // openid profile
+  scope: 'openid email roles',
+  response_type: 'id_token token',
+  authority: 'https://dev-1auth.1rivet.com/',
+  redirect_uri: 'http://localhost:4200/',
+  post_logout_redirect_uri: 'http://localhost:4200/',
+  
+  // Policy server config
+  // silent_redirect_uri: 'http://localhost:4200/silent-renew.html',
+  // automaticSilentRenew: true,
+  // accessTokenExpiringNotificationTime: 4,
   // silentRequestTimeout:10000,
 
-  filterProtocolClaims: true,
-  loadUserInfo: true
+  // filterProtocolClaims: true,
+  // loadUserInfo: true
 };
 
 /*
